@@ -19,12 +19,15 @@ body {
   max-width: 588px;
   margin: 40px auto 0;
   padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* PROFILE */
 #profile {
   text-align: center;
-  padding: 32px 24px 16px; /* Menos espaço acima e abaixo */
+  padding: 32px 24px 16px;
 }
 
 #profile img {
@@ -32,7 +35,7 @@ body {
   height: 112px;
   border-radius: 50%;
   object-fit: cover;
-  margin-top: 64px; /* 4cm aproximadamente */
+  margin-top: 64px;
 }
 
 #profile p {
@@ -44,8 +47,8 @@ body {
 #profile h1 {
   font-size: 18px;
   font-weight: 400;
-  color: white; /* Cor corrigida */
-  margin-top: 32px; /* 2cm aproximadamente */
+  color: white;
+  margin-top: 32px;
 }
 
 /* LINKS */
@@ -86,7 +89,7 @@ ul li a:focus {
 #social-links {
   display: flex;
   justify-content: center;
-  padding: 24px 0;
+  padding: 24px 0 16px;
   font-size: 24px;
   gap: 8px;
 }
@@ -110,9 +113,21 @@ ul li a:focus {
   outline-offset: 2px;
 }
 
+/* FRASE IMPACTANTE */
+.impacto {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 16px 0 8px;
+  color: white;
+  line-height: 1.4;
+  text-transform: none;
+}
+
 /* FOOTER */
 footer {
-  margin-top: 24px;
+  margin-top: auto;
+  padding-bottom: 16px;
   text-align: center;
   font-size: 14px;
   color: white;
@@ -131,15 +146,4 @@ footer a:hover {
 footer a:focus {
   outline: 2px solid white;
   outline-offset: 2px;
-}
-
-/* FRASE IMPACTANTE */
-.impacto {
-  text-align: center;
-  font-size: 16px; /* tamanho reduzido */
-  font-weight: 400; /* peso mais leve */
-  margin: 24px 0 0;
-  color: white;
-  line-height: 1.4;
-  text-transform: none; /* mantém letras normais */
 }
