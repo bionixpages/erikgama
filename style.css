@@ -1,0 +1,145 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: 'Inter', sans-serif;
+  background: url(./assets/bg.mobile.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+}
+
+/* CONTAINER */
+#container {
+  width: 100%;
+  max-width: 588px;
+  margin: 40px auto 0;
+  padding: 0 24px;
+}
+
+/* PROFILE */
+#profile {
+  text-align: center;
+  padding: 32px 24px 16px; /* Menos espaço acima e abaixo */
+}
+
+#profile img {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 64px; /* 4cm aproximadamente */
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+
+#profile h1 {
+  font-size: 18px;
+  font-weight: 400;
+  color: white; /* Cor corrigida */
+  margin-top: 32px; /* 2cm aproximadamente */
+}
+
+/* LINKS */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, border 0.2s;
+  color: white;
+}
+
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.5px solid white;
+}
+
+ul li a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* SOCIAL LINKS */
+#social-links {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+  font-size: 24px;
+  gap: 8px;
+}
+
+#social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-radius: 50%;
+  transition: background 0.2s;
+  color: white;
+}
+
+#social-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#social-links a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* FRASE IMPACTANTE */
+.impacto {
+  text-align: center;
+  font-size: 16px; /* tamanho reduzido */
+  font-weight: 400; /* peso mais leve */
+  margin: 24px 0 0;
+  color: white;
+  line-height: 1.4;
+  text-transform: none; /* mantém letras normais */
+}
